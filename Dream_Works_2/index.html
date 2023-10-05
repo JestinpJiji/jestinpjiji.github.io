@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>DreamWORKS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="html, css, javascript, jquery">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/vendor/animate.min.css">
+    <link rel="stylesheet" href="css/vendor/aos.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
+
+    <!-- extra -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+    <nav class="unslate_co--site-mobile-menu">
+        <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+                <span class="close-label">Close</span>
+                <div class="close-times">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                </div>
+            </a>
+        </div>
+        <div class="site-mobile-inner"></div>
+    </nav>
+
+
+    <div class="unslate_co--site-wrap">
+
+        <div class="unslate_co--site-inner">
+
+            <div class="lines-wrap">
+                <div class="lines-inner">
+                    <div class="lines"></div>
+                </div>
+            </div>
+            <!-- END lines -->
+
+            <nav class="unslate_co--site-nav site-nav-target">
+
+                <div class="container">
+
+                    <div class="row align-items-center justify-content-between text-left">
+                        <div class="col-md-5 text-right">
+                            <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                                <li class="has-children">
+                                    <a href="index.html" class="nav-link">Home</a>
+                                </li>
+
+                                <li><a href="about_us.html" class="nav-link">About</a></li>
+                                <!-- <li><a href="Portfolio.html" class="nav-link">Portfolio</a></li> -->
+
+                            </ul>
+                        </div>
+                        <!-- <a href="index.html" class="unslate_co--site-logo"><b>DreamWORKS<span>.</span></b></a> -->
+                        <!-- <div class="site-logo pos-absolute">
+                            
+                            <a href="index.html" class="unslate_co--site-logo"><b><span> </span>DreamWORKS<span>
+                                    </span></b></a>
+                        </div> -->
+
+                        <style>
+                            .logo-image {
+                                max-width: 200px;
+                                /* Adjust the maximum width as needed */
+                                height: auto;
+                                /* Maintain the aspect ratio */
+                                vertical-align: middle;
+                                /* Vertically align the logo */
+                            }
+                        </style>
+                        <div class="site-logo pos-absolute">
+                            <a href="index.html" class="unslate_co--site-logo">
+                                <img src="images/log_head.png" alt="DreamWORKS Logo" class="logo-image">
+                                <!-- <span>DreamWORKS</span> -->
+                            </a>
+                        </div>
+
+                        <div class="col-md-5 text-right text-lg-left">
+                            <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                                <li><a href="services.html" class="nav-link">Services</a></li>
+                                <!-- <li><a href="testimonails.html" class="nav-link">Testimonial</a></li> -->
+                                <!-- <li><a href="#journal-section" class="nav-link">Journal</a></li> -->
+                                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                            </ul>
+
+                            <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                                <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+            <!-- END nav -->
+
+
+
+
+
+
+            <!-- orginal -->
+            <style>
+                /* CSS for the logo and logo-heading */
+                .logo-heading {
+                    position: absolute;
+                    top: 20%;
+                    /* Adjust the vertical position as needed */
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    z-index: 3;
+                    /* Place the logo above the overlay content */
+                }
+
+                .logo {
+                    max-width: 100%;
+                    /* Allow the logo to maintain its aspect ratio */
+                    height: auto;
+                    /* Automatically adjust the logo's height */
+                    margin-bottom: 5px;
+                }
+
+                /* Additional styling for the subheading if needed */
+                .subheading {
+                    font-size: 1.2rem;
+                    color: #fff;
+                    /* Customize the text color */
+                }
+
+                /* CSS for the overlay content */
+                .overlay-content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 2;
+                    /* Place the overlay content above the video */
+                    background-color: rgba(0, 0, 0, 0.5);
+                    /* Add a semi-transparent background for readability */
+                    color: #fff;
+                    /* Customize the text color */
+                }
+
+                /* CSS for the video container */
+                .video-container {
+                    position: relative;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 100vh;
+                }
+
+                /* CSS for the video */
+                video#background-video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: 1;
+                }
+            </style>
+            <div class="cover-v1">
+                <div class="video-container">
+                    <video autoplay muted loop id="background-video">
+                        <source src="images/vid5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay-content">
+                        <!-- Place your logo and subheading here -->
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 mx-auto text-center">
+                                    <h4 class="logo-heading gsap-reveal-hero">
+                                        <img src="images/log_3.png" alt="Your Logo" class="logo">
+                                    </h4>
+                                    <br><br><br>
+                                    <h2 class="subheading gsap-reveal-hero">Your Journey Our Passion: Making Dreams a
+                                        Reality
+                                        with Service Excellence</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <a href="#portfolio-section" class="mouse-wrap smoothscroll">
+                <span class="mouse">
+                    <span class="scroll"></span>
+                </span>
+                <span class="mouse-label">Explore More</span>
+            </a>
+
+        </div>
+
+
+
+
+    </div>
+
+    <style>
+        @media (max-width: 768px) {
+
+            /* Styles for screens up to 768px wide (typical for mobile devices) */
+            .btn {
+                padding: 10px 20px;
+                /* Adjust padding as needed */
+                font-size: 16px;
+                /* Adjust font size as needed */
+            }
+        }
+
+        .logo-image_footer {
+            max-width: 200px;
+            /* Adjust the maximum width as needed */
+            height: auto;
+            /* Maintain the aspect ratio */
+            vertical-align: middle;
+            /* Vertically align the logo */
+        }
+
+        /* Style the "Apply Now" button with a black theme */
+        /* Style the "Apply Now" button with curved ends in a black theme */
+        
+
+       /* Regular styling for the button */
+a[href="your_target_page.html"].button-link {
+    display: inline-block;
+    padding: 8px 18px;
+    /* Adjust padding to your desired button size */
+    background-color: #000;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-decoration: none;
+    border: 2px solid #fff; /* White border */
+    border-radius: 20px;
+    /* Increase the value for more pronounced rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background color and text color transitions on hover */
+}
+
+/* Hover effect for the button */
+a[href="your_target_page.html"].button-link:hover {
+    background-color: #333;
+    /* Darker black on hover */
+    color: #fff;
+    /* White text color on hover */
+    font-weight: bold; /* Make the text bold on hover */
+}
+
+
+        .join_team {
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- 
+    <div class="unslate_co--footer unslate_co--section">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="footer-site-logo"><img src="images/log_head.png" alt="DreamWORKS Logo"
+                        class="logo-image_footer"></div>
+                <ul class="footer-site-social">
+                    <li><a href="your_target_page.html">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <br>
+                    <span class="d-block contact-info-label">#Join Our Team</span>
+                    <a href="your_target_page.html" class="button-link">Apply Now</a>
+                    <br>
+
+                    css button
+                    a[href="your_target_page.html"].button-link_old {
+            display: inline-block;
+            padding: 8px 18px;
+            /* Adjust padding to your desired button size */
+            background-color: #000;
+            /* Black background color */
+            color: #fff;
+            /* White text color */
+            text-decoration: none;
+            border: 2px solid #000;
+            /* Black border */
+            border-radius: 20px;
+            /* Increase the value for more pronounced rounded corners */
+            transition: background-color 0.3s ease;
+            /* Smooth background color transition on hover */
+        }
+
+        /* Add a hover effect for the black-themed button */
+        a[href="your_target_page.html"].button-link_old:hover {
+            background-color: #333;
+            /* Darker black on hover */
+            border-color: #333;
+            /* Darker border color on hover */
+        }
+        end
+
+                    <span class="d-block contact-info-label">Email : <span> <a href="#"
+                                class="contact-info-val">info@yourdomain.com</a> </span> </span> -->
+    <!-- <a href="#" class="contact-info-val">info@yourdomain.com</a> -->
+    <!-- <span class="d-block contact-info-label">Phone : <span> <a href="#" class="contact-info-val">+12 345
+                                6789 012</a> </span></span> -->
+    <!-- <a href="#" class="contact-info-val">+12 345 6789 012</a> -->
+    <!-- <span class="d-block contact-info-label">Address : <span> <a href="#" class="contact-info-val">273 South Riverview Rd. <br> New York, NY 10011</a> </span></span> -->
+    <!-- <span class="d-block contact-info-label">Address</span>
+                    <address class="contact-info-val"><a href="#">273 South Riverview Rd. <br> New York, NY 10011</a> -->
+    <!-- </address>
+                </ul>
+
+            </div>
+        </div>
+    </div> -->
+
+    <footer class="unslate_co--footer unslate_co--section">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="footer-site-logo"><img src="images/log_head.png" alt="DreamWORKS Logo"
+                        class="logo-image_footer"></div>
+                <ul class="footer-site-social">
+                    <!-- <li><a href="your_target_page.html">Instagram</a></li> -->
+                    <li><a href="https://www.instagram.com/j_esti_n/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/jestin-p-jiji-319509248" target="_blank">LinkedIn</a></li>
+                </ul>
+                <span class="join_team">#Join Our Team &nbsp; </span>
+                <a href="apply_now.html" class="button-link">Apply Now</a>
+                <div style="margin-top: 15px;"></div>
+
+                <span class="d-block contact-info-label">Email : <span><a href="#"
+                            class="contact-info-val">info@yourdomain.com</a></span></span>
+
+                <span class="d-block contact-info-label">Phone : <span><a href="#" class="contact-info-val">+12 345
+                            6789 012</a></span></span>
+
+                <span class="d-block contact-info-label">Address : <span><a href="#" class="contact-info-val">273 South
+                            Riverview Rd. <br> New York, NY 10011</a></span></span>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Loader -->
+    <div id="unslate_co--overlayer"></div>
+    <div class="site-loader-wrap">
+        <div class="site-loader"></div>
+    </div>
+
+
+    <script src="js/scripts-dist.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
