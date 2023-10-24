@@ -84,10 +84,22 @@
                                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                             </ul>
 
+                            <style>
+                                .menu-icon {
+                                    width: 40px;
+                                    height: 40px;
+                                    display: block; /* Ensures the image behaves as a block element */
+                                    margin: 0; /* Removes any default margin */
+                                    padding: 0; /* Removes any default padding */
+                                }
+                            </style>
+                            
                             <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                                <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                                <li style="list-style-type: none;"> <!-- Remove default list-style -->
+                                    <a href="#" class="js-menu-toggle"><img src="images/menu.png" alt="Menu" class="menu-icon"></a>
+                                </li>
                             </ul>
-
+                            
                         </div>
                     </div>
                 </div>
@@ -103,7 +115,8 @@
                 <div class="container">
 
                     <div class="section-heading-wrap text-center mb-5">
-                        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">About Us</span></h2>
+                        <br>
+                        <h3 class="heading-h2 text-center divider"><span class="gsap-reveal">About Us</span></h3>
                         <span class="gsap-reveal">
                             <img src="images/divider.png" alt="divider" width="76">
                         </span>
@@ -171,78 +184,52 @@
 
 
             <!-- number of services -->
+            <style>
+                .append-text {
+                    /* color: #D63447; Change the text color to red */
+                    font-size: 20px; /* Adjust the font size as needed */
+                }
+            </style>
+            
             <div class="unslate_co--section section-counter" id="skills-section">
                 <div class="container">
                     <div class="section-heading-wrap text-center mb-5">
-                        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Elevating
-                                Hospitality</span></h2>
+                        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Elevating Hospitality</span></h2>
                         <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
                     </div>
-
-
+            
                     <div class="row pt-5">
-                        <!-- <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up"
-                            data-aos-delay="0">
+                        <div class="col-12 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
                             <div class="counter-v1 text-center">
                                 <span class="number-wrap">
                                     <span class="number number-counter" data-number="100000">0</span>
-                                    
+                                    <span class="append-text">+</span>
                                 </span>
                                 <span class="counter-label">Hrs Of Hospitality Service</span>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up"
-                            data-aos-delay="100">
+                        <div class="col-12 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                             <div class="counter-v1 text-center">
                                 <span class="number-wrap">
                                     <span class="number number-counter" data-number="500">0</span>
-                                   
-                                </span>
-                                <span class="counter-label">Staffs</span>
-                            </div>
-                        </div> -->
-                        <div class="col-12 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-                            <div class="counter-v1 text-center">
-                                <span class="number-wrap">
-                                    <span class="number number-counter" data-number="100000">0</span>
-                                    <!-- <span class="append-text">+</span> -->
-                                </span>
-                                <span class="counter-label">Hrs Of Hospitality Service</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                            <div class="counter-v1 text-center">
-                                <span class="number-wrap">
-                                    <span class="number number-counter" data-number="500">0</span>
-                                    <!-- <span class="append-text">0</span> -->
+                                    <span class="append-text">+</span>
                                 </span>
                                 <span class="counter-label">Staffs</span>
                             </div>
                         </div>
-                        
-                        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up"
-                            data-aos-delay="200">
-                            <div class="counter-v1 text-center">
-                                <span class="number-wrap">
-                                    <span class="number number-counter" data-number="12">0</span>
-                                    <!-- <span class="append-text">%</span> -->
-                                </span>
-                                <span class="counter-label">Hotels Served</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up"
-                            data-aos-delay="300">
+                        <div class="col-12 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                             <div class="counter-v1 text-center">
                                 <span class="number-wrap">
                                     <span class="number number-counter" data-number="100">0</span>
                                     <span class="append-text">%</span>
                                 </span>
-                                <span class="counter-label">Client Feed Back</span>
+                                <span class="counter-label">Client Feedback</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
 
 
             <!-- More About US -->
@@ -447,11 +434,9 @@
                     </ul>
 
                     <span class="d-block contact-info-label">Email : <span><a href="#"
-                                class="contact-info-val">info@yourdomain.com</a></span></span>
+                                class="contact-info-val">info@dreamworksltd.co.uk</a></span></span>
 
-                    <span class="d-block contact-info-label">Phone : <span><a href="#" class="contact-info-val">+12
-                                345
-                                6789 012</a></span></span>
+                    <span class="d-block contact-info-label">Phone : <span><a href="#" class="contact-info-val">07538 500391</a></span></span>
 
                     <!-- <span class="d-block contact-info-label">Address : <span><a href="#" class="contact-info-val">273
                                 South

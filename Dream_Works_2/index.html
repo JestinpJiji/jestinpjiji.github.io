@@ -154,7 +154,7 @@
             <div class="cover-v1">
                 <div class="video-container">
                     <video autoplay muted loop id="background-video">
-                        <source src="images/vid5.mp4" type="video/mp4">
+                        <source src="images/vid6.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <div class="overlay-content">
@@ -426,7 +426,47 @@
                     <li><a href="https://www.instagram.com/j_esti_n/" target="_blank">Instagram</a></li>
                     <li><a href="https://www.linkedin.com/in/jestin-p-jiji-319509248" target="_blank">LinkedIn</a></li>
                 </ul>
-                <span class="join_team">#Join Our Team</span>
+
+                <style>
+                    .join_team {
+                        display: inline-block;
+                        animation: fade 5s infinite;
+                        opacity: 0;
+                        /* font-size: 20px; */
+                    }
+
+                    @keyframes fade {
+
+                        0%,
+                        100% {
+                            opacity: 0;
+                        }
+
+                        12.5%,
+                        37.5% {
+                            opacity: 1;
+                        }
+
+                        50%,
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+                </style>
+                <span class="join_team" id="dynamicText">#Join Our Team</span>
+                <script>
+                    const texts = ["We're Hiring","#Join Us Today","  ", "Exciting Opportunities","Explore More","#Join Our Team"];
+                    let textIndex = 0;
+                    const dynamicText = document.getElementById("dynamicText");
+
+                    function changeText() {
+                        dynamicText.textContent = texts[textIndex];
+                        textIndex = (textIndex + 1) % texts.length;
+                    }
+
+                    setInterval(changeText, 4000); // Change text every 4 seconds (adjust as needed)
+                </script>
+
                 <div class="d-flex justify-content-center"> <!-- Center the Apply Now button -->
                     <a href="apply_now.html">
                         <button class="button">
@@ -442,9 +482,8 @@
 
                 <div style="margin-top: 15px;"></div>
                 <span class="d-block contact-info-label">Email : <span><a href="#"
-                            class="contact-info-val">info@yourdomain.com</a></span></span>
-                <span class="d-block contact-info-label">Phone : <span><a href="#" class="contact-info-val">+12 345
-                            6789 012</a></span></span>
+                            class="contact-info-val">info@dreamworksltd.co.uk</a></span></span>
+                <span class="d-block contact-info-label">Phone : <span><a href="#" class="contact-info-val">07538 500391</a></span></span>
                 <!-- <span class="d-block contact-info-label">Address : <span><a href="#" class="contact-info-val">273 South
                             Riverview Rd. <br> New York, NY 10011</a></span></span> -->
             </div>
